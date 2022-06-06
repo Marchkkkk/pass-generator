@@ -5,8 +5,8 @@ list = ('1234567890abcdefghigklmnopqrstuvyxwzABCDEFGHIGKLMNOPQRSTUVYXWZ') ##list
 
 passAmount = int (input('Ammount of passwords: '))
 symbolsamount = int (input('Ammount of symbols: '))
-f = open('resultpass.txt', 'w+')
 
+f = open('resultpass.txt', 'w+')
 
 for x in range(1, passAmount+1):
 
@@ -14,8 +14,8 @@ for x in range(1, passAmount+1):
     pas = pas + random.choice(list)
 
   f.write(pas + '\n')
-  print(pas)
   pas =''
+  
 f.close()
 
 
